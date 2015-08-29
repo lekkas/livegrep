@@ -17,5 +17,5 @@ WORKDIR /livegrep
 RUN make -j4 all
 RUN mkdir -p gopath/src/github.com/livegrep
 RUN ln -s /livegrep gopath/src/github.com/livegrep/livegrep
-RUN sh -c 'env GOPATH=/livegrep/gopath go get github.com/livegrep/livegrep/livegrep'
+RUN sh -c 'env GOPATH=/livegrep/gopath go get github.com/livegrep/livegrep'
 
