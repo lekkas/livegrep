@@ -10,6 +10,7 @@ RUN apt-get -y install libjson0-dev libgflags-dev libgit2-dev libboost-dev libsp
 RUN apt-get -y install libboost-filesystem-dev libboost-system-dev
 RUN apt-get -y install golang
 RUN apt-get -y install mercurial git
+RUN apt-get -y install cmake
 
 RUN git clone https://github.com/livegrep/livegrep /livegrep
 WORKDIR /livegrep
